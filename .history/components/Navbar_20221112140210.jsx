@@ -7,11 +7,7 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center md:hidden'>
-      <Image alt = "" src={image_2} className='rounded-full p-2 h-28 w-28' />
-
-        <HamburgerMenu className = ''/>
-      </div>
+      <HamburgerMenu className = 'sm:flex md:hidden'/>
 
       <div className='md:flex hidden justify-between items-center ml-5 mr-5'>
         <Image alt = "" src={image_2} className='rounded-full p-2 h-28 w-28' />

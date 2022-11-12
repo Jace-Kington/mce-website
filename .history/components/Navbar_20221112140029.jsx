@@ -7,13 +7,9 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center md:hidden'>
-      <Image alt = "" src={image_2} className='rounded-full p-2 h-28 w-28' />
+      <HamburgerMenu className = 'md:hidden'/>
 
-        <HamburgerMenu className = ''/>
-      </div>
-
-      <div className='md:flex hidden justify-between items-center ml-5 mr-5'>
+      <div className='flex sm:visible justify-between items-center ml-5 mr-5'>
         <Image alt = "" src={image_2} className='rounded-full p-2 h-28 w-28' />
         <div className='flex gap-10 items-center'>
           <a className='hover:text-blue-400 transition ease-in' href='#services-section'>
