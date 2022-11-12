@@ -35,11 +35,11 @@ const Navbar = () => {
 
       <div className='sm:grid sm:grid-cols-2'>
         <div className='text-center sm:text-left text-blue-400 mt-12 ml-12'>
-          <div className='text-5xl sm:text-7xl'>
+          <div className='text-4xl sm:text-7xl'>
             The Best 
           </div>
-          <strong className='text-5xl sm:text-7xl'>Trade Services</strong>
-          <div className='text-5xl sm:text-7xl'>
+          <strong className='text-7xl'>Trade Services</strong>
+          <div className='text-4xl sm:text-7xl'>
             On the Sunny Coast
           </div>
 

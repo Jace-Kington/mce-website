@@ -33,7 +33,7 @@ const ContactUs = () => {
           <div className='text-white uppercase text-center text-4xl font-semibold md:hidden'>
             We'll Be in Touch
           </div>
-          <form ref = {form} onSubmit = {sendEmail} className = 'pt-20 p-5 sm:p-0 sm:pt-20'>
+          <form ref = {form} onSubmit = {sendEmail} className = 'pt-20 p-5 sm:p-5'>
             <div className = 'flex gap-20 '>
               <div className = 'flex flex-col gap-10'>
                 <div>

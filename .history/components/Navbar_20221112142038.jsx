@@ -34,12 +34,12 @@ const Navbar = () => {
       </div>
 
       <div className='sm:grid sm:grid-cols-2'>
-        <div className='text-center sm:text-left text-blue-400 mt-12 ml-12'>
-          <div className='text-5xl sm:text-7xl'>
+        <div className='text-left text-blue-400 mt-12 ml-12'>
+          <div className='text-4xl sm:text-7xl'>
             The Best 
           </div>
-          <strong className='text-5xl sm:text-7xl'>Trade Services</strong>
-          <div className='text-5xl sm:text-7xl'>
+          <strong className='text-7xl'>Trade Services</strong>
+          <div className='text-4xl sm:text-7xl'>
             On the Sunny Coast
           </div>
 
@@ -49,8 +49,8 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-        <div className='md:flex hidden'>
-            <Image src={image_2} alt= ""/>
+        <div>
+
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#60a5fa" fill-opacity="1" d="M0,192L48,186.7C96,181,192,171,288,160C384,149,480,139,576,144C672,149,768,171,864,197.3C960,224,1056,256,1152,261.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>

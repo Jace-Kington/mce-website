@@ -6,7 +6,7 @@ const Services = () => {
         <div className = 'text-white text-center font-semibold text-lg uppercase underline-offset-1'>Our Services</div>
         <div className = 'grid grid-cols-2 m-10'>
             <div className = ''>
-                <div className = 'text-white text-3xl sm:text-6xl font-bold'>Commercial</div>
+                <div className = 'text-white text-2xl sm:text-6xl font-bold'>Commercial</div>
                 <div className = 'text-white text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque culpa at enim rem deleniti, doloribus veritatis iusto reiciendis totam cum aliquid tempore adipisci. </div>
             </div>
             <div className = ''>
@@ -16,8 +16,8 @@ const Services = () => {
                 
             </div>
             <div>
-                <div className = 'text-white text-3xl sm:text-6xl font-bold'>Residential</div>
-                <div className = 'text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit, est fugiat quis aliquid dolore asperiores velit ducimus </div>
+                <div className = 'text-white text-6xl font-bold'>Residential</div>
+                <div className = 'text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit, est fugiat quis aliquid dolore asperiores velit ducimus modi numquam doloribus nesciunt quos molestiae, consequatur perspiciatis animi adipisci ipsa voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ut, quaerat praesentium reiciendis blanditiis dolorem ad veritatis odit ex maxime consequuntur aut aspernatur saepe quae laboriosam delectus! Distinctio, excepturi libero!</div>
             </div>
         </div>
         <svg className = 'bg-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
