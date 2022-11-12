@@ -1,9 +1,11 @@
-
-import Navbar from '../components/Navbar'
-import Services from '../components/Services'
-import MeetUs from '../components/Meet-us'
-import ContactUs from '../components/ContactUs'
-import Footer from '../components/Footer'
+import Head from 'next/head'
+import Image from 'next/image'
+import styles from './styles/Home.module.css'
+import Navbar from './components/Navbar'
+import Services from './components/Services'
+import MeetUs from './components/Meet-us'
+import ContactUs from './components/ContactUs'
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
