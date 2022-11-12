@@ -8,9 +8,9 @@ const MeetUs = () => {
     <div id = "meet-us" className = 'max-w-[100%]'>
         <div className = 'text-blue-400 uppercase font-semibold text-center'>Meet the Team</div>
 
-        <div className = 'justify-center flex items-center gap-10 m-10'>
+        <div className = 'justify-center flex gap-10 m-10'>
             <div>
-              <Image alt = "" className = 'rounded-2xl shadow-2xl shadow-blue-400 grayscale h-54 w-36 sm:h-72 sm:w-44' src = {image_2}/>
+              <Image alt = "" className = 'rounded-2xl shadow-2xl shadow-blue-400 grayscale h-72 w-44' src = {image_2}/>
             </div>
             <div>
                 <div className = 'uppercase text-lg'>CEO & Founder</div>
