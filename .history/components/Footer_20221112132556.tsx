@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
             </div>
             
-            <div className='flex gap-20'>
+            <div className='flex gap-10'>
                 <div className = ''>
                     <div className = 'text-lg font-bold pb-5'>
                         Contact Us

@@ -4,8 +4,8 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const ContactUs = () => {
-  const toast_success = () => { toast('Email Sent!'); }
-  const toast_fail = () => { toast('Error'); }
+  const toast_success = () => { toast.success('Email Sent'); }
+  const toast_fail = () => { toast.error('Error'); }
 
   const form = useRef();
 

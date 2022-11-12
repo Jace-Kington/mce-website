@@ -4,24 +4,19 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const ContactUs = () => {
-  const toast_success = () => { toast('Email Sent!'); }
-  const toast_fail = () => { toast('Error'); }
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_16oy9kb', 'template_p83nfjr', form.current, '7jHtCbxop4BW2nz9r')
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
       .then((result) => {
           console.log(result.text);
-          toast_success();
       }, (error) => {
           console.log(error.text);
-          toast_fail();
       });
   };
-
+  
   return (
     <div id = "contact-us" className = 'bg-blue-400'>
         <div className = 'flex'>
@@ -30,7 +25,7 @@ const ContactUs = () => {
               <div>Be In</div>
               <div>Touch</div>
           </div>
-          <form ref = {form} onSubmit = {sendEmail} className = 'pt-20'>
+          <form  className = 'pt-20'>
             <div className = 'flex gap-20 '>
               <div className = 'flex flex-col gap-10'>
                 <div>

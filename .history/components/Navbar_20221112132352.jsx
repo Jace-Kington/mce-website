@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
 
         <div className='outline-rounded mt-20 bg-white'>
-          <a  style = {{'border-width': '2px', 'border-color': '#60a5fa'}} className='rounded-2xl hover:bg-blue-400 hover:text-white transition shadow-md shadow-blue-400 hover:shadow-lg hover:shadow-blue-400 p-5' href="#contact-us">
+          <a  style = {{'border-width': '2px', 'border-color': '60a5fa'}} className='rounded-2xl hover:bg-blue-400 hover:text-white transition shadow-md shadow-blue-400 hover:shadow-lg hover:shadow-blue-400 p-5' href="#contact-us">
             Get Started
           </a>
         </div>

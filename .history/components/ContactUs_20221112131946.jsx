@@ -4,15 +4,15 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const ContactUs = () => {
-  const toast_success = () => { toast('Email Sent!'); }
-  const toast_fail = () => { toast('Error'); }
+  const toast_success = () => { toast.success('Email Sent'); }
+  const toast_fail = () => { toast.error('Error'); }
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_16oy9kb', 'template_p83nfjr', form.current, '7jHtCbxop4BW2nz9r')
+    emailjs.sendForm('service_16oy9kb', 'template_xfwouvq', form.current, '7jHtCbxop4BW2nz9r')
       .then((result) => {
           console.log(result.text);
           toast_success();

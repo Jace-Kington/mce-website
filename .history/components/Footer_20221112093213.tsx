@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <div className = 'border-t-2 border-gray pb-4 bg-blue-400'>
-        <div className = 'flex justify-between text-white p-20'>
+        <div className = 'flex justify-around text-white p-20'>
             <div className = ''>
                 <div className = 'flex items-center gap-5'>
                 <Image alt = "" src= {image_2} className = 'items-start rounded-full p-2 h-28 w-28'/>
@@ -22,40 +22,38 @@ const Footer = () => {
                     <div>fjf</div>
                 </div>
             </div>
-            
-            <div className='flex gap-20'>
-                <div className = ''>
-                    <div className = 'text-lg font-bold pb-5'>
-                        Contact Us
-                    </div>
-                    <div>
-                        Address
-                    </div>
-                    <div>
-                        Phone number
-                    </div>
-                    <div>
-                        Email
-                    </div>
+
+            <div className = ''>
+                <div className = 'text-lg font-bold pb-5'>
+                    Contact Us
+                </div>
+                <div>
+                    Address
+                </div>
+                <div>
+                    Phone number
+                </div>
+                <div>
+                    Email
+                </div>
+            </div>
+
+            <div>
+                <div className = 'text-lg font-bold pb-5'>
+                    Pages
                 </div>
 
                 <div>
-                    <div className = 'text-lg font-bold pb-5'>
-                        Pages
-                    </div>
-
-                    <div>
-                        Home
-                    </div>
-                    <div>
-                        Services
-                    </div>
-                    <div>
-                        Team
-                    </div>
-                    <div>
-                        Contact Us
-                    </div>
+                    Home
+                </div>
+                <div>
+                    Services
+                </div>
+                <div>
+                    Team
+                </div>
+                <div>
+                    Contact Us
                 </div>
             </div>
         </div>
