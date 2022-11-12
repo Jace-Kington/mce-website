@@ -39,7 +39,7 @@ const ContactUs = () => {
             </div>
   
             <div>
-              <button style = {{'border-width': '3px', 'border-color': 'white'}} className = 'text-center w-full p-3 rounded-2xl font-semibold hover:text-blue-400 text-white transition ease-in bg-blue-400 hover:bg-white mt-14'>Send</button>
+              <button style = {{'border-width': '3px', 'border-color': 'white'}} className = 'text-center w-full p-3 rounded-2xl font-semibold hover:text-blue-400 text-white transition ease-in bg-blue-400 outline outline-4 outline-white hover:bg-white mt-14'>Send</button>
               <ToastContainer
   position="top-right"
   autoClose={5000}
