@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css'
 const ContactUs = () => {
   const toast_success = () => { toast('Email Sent!'); }
   const toast_fail = () => { toast('Error'); }
-
+  
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,6 +14,9 @@ const ContactUs = () => {
 
     emailjs.sendForm('service_16oy9kb', 'template_p83nfjr', form.current, '7jHtCbxop4BW2nz9r')
       .then((result) => {
+          document.getElementById("buttonSubmit").innerHTML="Sent!";
+          buttonSubmit.classList.add('text-center', 'w-full', 'p-3', 'rounded-2xl', 'font-semibold', 'text-white', 'bg-green-400', 'mt-14');
+
           console.log(result.text);
           toast_success();
       }, (error) => {
@@ -24,13 +27,13 @@ const ContactUs = () => {
 
   return (
     <div id = "contact-us" className = 'bg-blue-400'>
-        <div className = 'sm:flex'>
+        <div className = 'sm:flex sm:justify-center sm:p-10'>
           <div className = 'text-white uppercase font-semibold p-20 text-8xl'>
               <div className='md:flex hidden'>We&apos;ll</div>
               <div className='md:flex hidden'>Be In</div>
               <div className='md:flex hidden'>Touch</div>
           </div>
-          <div className='text-white uppercase text-center text-4xl font-semibold md:hidden'>
+          <div className='text-white uppercase  text-4xl font-semibold md:hidden'>
             We&apos;ll Be in Touch
           </div>
           <form ref = {form} onSubmit = {sendEmail} className = 'pt-20 p-5 sm:p-0 sm:pt-20'>
@@ -60,7 +63,9 @@ const ContactUs = () => {
             </div>
   
             <div>
-              <button style = {{'border-width': '3px', 'border-color': 'white'}} className = 'text-center w-full p-3 rounded-2xl font-semibold hover:text-blue-400 text-white transition ease-in bg-blue-400 hover:bg-white mt-14'>Send</button>
+            <div id = "buttonSubmit">
+             <button style = {{'border-width': '3px', 'border-color': 'white'}} className = 'text-center w-full p-3 rounded-2xl font-semibold hover:text-blue-400 text-white transition ease-in bg-blue-400 hover:bg-white mt-14'>Send</button>
+            </div>
               <ToastContainer
   position="top-right"
   autoClose={5000}
