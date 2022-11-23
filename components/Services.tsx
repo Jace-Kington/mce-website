@@ -1,23 +1,34 @@
 import React from 'react'
+import Image from 'next/image'
+import domestic from "../assets/domestic.jpg"
+import industrial from "../assets/industrial.webp"
+import commercial from "../assets/commercial.webp"
 
 const Services = () => {
   return (
     <div id = 'services-section' className = 'bg-blue-400'>
         <div className = 'text-white text-center font-semibold text-lg uppercase underline-offset-1'>Our Services</div>
-        <div className = 'grid grid-cols-2 m-10'>
-            <div className = ''>
-                <div className = 'text-white text-3xl sm:text-6xl font-bold'>Commercial</div>
-                <div className = 'text-white text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque culpa at enim rem deleniti, doloribus veritatis iusto reiciendis totam cum aliquid tempore adipisci. </div>
+        <div data-aos="fade-right" className = 'sm:grid sm:grid-cols-2 items-center justify-center m-10 '>
+            <div data-aos="fade-up-right" className = ' mb-12 mr-12'>
+                <div className = 'text-white text-3xl sm:text-6xl font-bold mb-5'>Commercial</div>
+                <div className = 'text-white text-lg leading-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque culpa at enim rem deleniti, doloribus veritatis iusto reiciendis totam cum aliquid tempore adipisci. </div>
             </div>
-            <div className = ''>
-                
+            <div data-aos="fade-right" className = 'sm:ml-36 mb-20'>
+                <Image className = 'rounded-2xl h-88 w-96 text-center shadow-2xl' src = {commercial}/>
             </div>
-            <div>
-                
+            <div data-aos="fade-right" className = "mb-12 items-center">
+                <Image className = 'rounded-2xl mb-10 shadow-2xl' src = {industrial}/>
             </div>
-            <div>
-                <div className = 'text-white text-3xl sm:text-6xl font-bold'>Residential</div>
-                <div className = 'text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit, est fugiat quis aliquid dolore asperiores velit ducimus </div>
+            <div data-aos="fade-up-right" className = "mb-20 sm:ml-12 items-center">
+                <div className = 'text-white text-3xl sm:text-6xl mb-5 font-bold'>Industrial</div>
+                <div className = 'text-white leading-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit, est fugiat quis aliquid dolore asperiores velit ducimus </div>
+            </div>
+             <div data-aos="fade-up-right" className = 'mr-12 mb-12'>
+                <div className = 'text-white text-3xl sm:text-6xl mb-5 font-bold'>Domestic</div>
+                <div className = 'text-white text-lg leading-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque culpa at enim rem deleniti, doloribus veritatis iusto reiciendis totam cum aliquid tempore adipisci. </div>
+            </div>
+            <div data-aos="fade-right" className = ''>
+                <Image className = 'shadow-2xl rounded-2xl' src = {domestic}  alt = ""/>
             </div>
         </div>
         <svg className = 'bg-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

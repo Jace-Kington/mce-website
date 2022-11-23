@@ -3,7 +3,8 @@ import emailjs from '@emailjs/browser'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-const ContactUs = () => {
+const ContactUs = ({ num }) => {
+  
   const toast_success = () => { toast('Email Sent!'); }
   const toast_fail = () => { toast('Error'); }
   
@@ -27,13 +28,13 @@ const ContactUs = () => {
 
   return (
     <div id = "contact-us" className = 'bg-blue-400'>
-        <div className = 'sm:flex sm:justify-center sm:p-10'>
+        <div data-aos="fade-right" className = ' sm:flex sm:justify-center sm:p-10'>
           <div className = 'text-white uppercase font-semibold p-20 text-8xl'>
               <div className='md:flex hidden'>We&apos;ll</div>
               <div className='md:flex hidden'>Be In</div>
               <div className='md:flex hidden'>Touch</div>
           </div>
-          <div className='text-white uppercase  text-4xl font-semibold md:hidden'>
+          <div className='text-white uppercase text-center  text-4xl font-semibold md:hidden'>
             We&apos;ll Be in Touch
           </div>
           <form ref = {form} onSubmit = {sendEmail} className = 'pt-20 p-5 sm:p-0 sm:pt-20'>
