@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import Image from 'next/image'
 import image_2 from '../assets/logo-1.png'
 import HamburgerMenu from './Hamburger'
@@ -6,32 +6,51 @@ import Link from 'next/link'
 import heroImage from '../assets/hero-image.jpg'
 
 const Navbar = () => {
-  function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
+  const [toggleNav, setToggleNav] = useState(false);
 
-/* Close */
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
+  const [checkWidth, setCheckWidth] = useState(window.innerWidth);
+
+  const checkFunc = () => {
+    console.log(checkWidth);
+    setCheckWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", checkFunc);
+
+    return () => {
+      window.removeEventListener("resize", checkFunc);
+    };
+  }, []);
+
+  const toggleNavFunc = () => {
+    setToggleNav(!toggleNav);
+  };
 
   return (
     <div id = "home" className=''>
-      <div id = "myNav" className='flex justify-between items-center md:hidden'>
+      <div className='flex justify-between items-center md:hidden'>
       <Image alt = "" src={image_2} className='rounded-full p-2 h-28 w-28' />
 
+       {checkWidth < 900 && (
+        <button onClick={toggleNavFunc} className="">
+        fjfj
+        </button>
+      )}
 
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <nav className={toggleNav ? "active" : ""}>
 
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+        {checkWidth < 900 && (
+          <button 
+          onClick={toggleNavFunc} className="close-curtain">
+            X
+          </button>
+        )}
 
-</div>
-
-<button onclick="openNav()">open</button>
+        <a href="#">HOME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT</a>
+      </nav>
       </div>
 
       <div className='md:flex hidden justify-between items-center ml-5 mr-5'>
