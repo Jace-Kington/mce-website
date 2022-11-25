@@ -4,53 +4,32 @@ import image_2 from '../assets/logo-1.png'
 import HamburgerMenu from './Hamburger'
 import Link from 'next/link'
 import heroImage from '../assets/hero-image.jpg'
+import { Dropdown } from "flowbite-react";
+
 
 const Navbar = () => {
-  const [toggleNav, setToggleNav] = useState(false);
-
-  const [checkWidth, setCheckWidth] = useState(window.innerWidth);
-
-  const checkFunc = () => {
-    console.log(checkWidth);
-    setCheckWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", checkFunc);
-
-    return () => {
-      window.removeEventListener("resize", checkFunc);
-    };
-  }, []);
-
-  const toggleNavFunc = () => {
-    setToggleNav(!toggleNav);
-  };
+ 
 
   return (
     <div id = "home" className=''>
+
       <div className='flex justify-between items-center md:hidden'>
       <Image alt = "" src={image_2} className='rounded-full p-2 h-28 w-28' />
 
-       {checkWidth < 900 && (
-        <button onClick={toggleNavFunc} className="">
-        fjfj
-        </button>
-      )}
-
-      <nav className={toggleNav ? "active" : ""}>
-
-        {checkWidth < 900 && (
-          <button 
-          onClick={toggleNavFunc} className="close-curtain">
-            X
-          </button>
-        )}
-
-        <a href="#">HOME</a>
-        <a href="#">SERVICES</a>
-        <a href="#">CONTACT</a>
-      </nav>
+        <Dropdown class = "bg-white" label={<div className='p-1/2'><svg className="w-8 h-8 text-gray-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></div>}>
+          <Dropdown.Item>
+            Dashboard
+          </Dropdown.Item>
+          <Dropdown.Item>
+            Settings
+          </Dropdown.Item>
+          <Dropdown.Item>
+            Earnings
+          </Dropdown.Item>
+          <Dropdown.Item>
+            Sign out
+          </Dropdown.Item>
+      </Dropdown>
       </div>
 
       <div className='md:flex hidden justify-between items-center ml-5 mr-5'>
