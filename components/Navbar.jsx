@@ -4,7 +4,6 @@ import image_2 from '../assets/logo-1.png'
 import HamburgerMenu from './Hamburger'
 import Link from 'next/link'
 import heroImage from '../assets/hero-image.jpg'
-import Hamburger from './Hamburger.jsx'
 
 const Navbar = () => {
  
