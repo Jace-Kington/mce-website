@@ -8,13 +8,13 @@ const Services = () => {
   return (
     <div id = 'services-section' className = 'bg-blue-400'>
         <div className = 'text-white text-center font-semibold text-lg uppercase underline-offset-1'>Our Services</div>
-        <div data-aos="fade-right" className = 'sm:grid sm:grid-cols-2 items-center justify-center m-10 '>
-            <div data-aos="fade-up-right" className = ' mb-12 mr-12'>
+        <div data-aos="fade-right" className = 'sm:grid hidden sm:grid-cols-2 items-center justify-center m-10 '>
+            <div data-aos="fade-up-right" className = 'mb-12'>
                 <div className = 'text-white text-3xl sm:text-6xl font-bold mb-5'>Commercial</div>
                 <div className = 'text-white text-lg leading-10'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque culpa at enim rem deleniti, doloribus veritatis iusto reiciendis totam cum aliquid tempore adipisci. </div>
             </div>
-            <div data-aos="fade-right" className = 'sm:ml-36 mb-20'>
-                <Image className = 'rounded-2xl h-88 w-96 text-center shadow-2xl' src = {commercial}/>
+            <div data-aos="fade-right" className = ' mb-20'>
+                <Image className = 'rounded-2xl h-88 w-96 text-center block m-auto shadow-2xl' src = {commercial}/>
             </div>
             <div data-aos="fade-right" className = "mb-12 items-center">
                 <Image className = 'rounded-2xl mb-10 shadow-2xl' src = {industrial}/>
@@ -29,6 +29,9 @@ const Services = () => {
             </div>
             <div data-aos="fade-right" className = ''>
                 <Image className = 'shadow-2xl rounded-2xl' src = {domestic}  alt = ""/>
+            </div>
+            
+            <div className = 'sm:hidden'>
             </div>
         </div>
         <svg className = 'bg-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

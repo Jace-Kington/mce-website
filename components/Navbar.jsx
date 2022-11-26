@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div id = "home" className=''>
 
-      <nav className='flex fixed top-0 bg-white z-10 w-full rounded-b-2xl shadow-lg justify-between items-center md:hidden'>
+      <nav className='flex fixed top-0 bg-white z-10 w-full mb-10 rounded-b-2xl shadow-lg justify-between items-center md:hidden'>
          <Image alt = "" src={image_2} className=' p-1 h-28 w-28' />
          
          <a className='bg-blue-400 hover:bg-blue-500 transition ease-in rounded-2xl p-3 mr-3' href="#contact-us">
@@ -18,7 +18,7 @@ const Navbar = () => {
            </a>
       </nav>
 
-      <nav className=' md:flex fixed bg-white top-0 z-10 rounded-b-2xl  left-0 right-0 hidden md:justify-between items-center pl-5 pr-5'>
+      <nav className=' md:flex fixed bg-white top-0 z-10 rounded-b-2xl shadow-lg left-0 right-0 hidden md:justify-between items-center pl-5 pr-5'>
         <Image alt = "" src={image_2} className=' p-2 h-28 w-28' />
         <div className='flex gap-10 items-center'>
           <a className='hover:text-blue-400 transition ease-in' href='#services-section'>

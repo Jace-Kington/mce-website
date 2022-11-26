@@ -28,7 +28,7 @@ const ContactUs = ({ num }) => {
 
   return (
     <div id = "contact-us" className = 'justify-center bg-blue-400'>
-        <div data-aos="fade-right" className = ' sm:flex sm:justify-center sm:p-10'>
+        <div data-aos="fade-right" className = ' sm:flex sm:gap-5 p-5 sm:justify-center sm:p-10'>
           <div className = 'text-white uppercase font-semibold  text-8xl'>
               <div className='md:flex hidden'>We&apos;ll</div>
               <div className='md:flex hidden'>Be In</div>
@@ -37,7 +37,7 @@ const ContactUs = ({ num }) => {
           <div className='text-white uppercase text-center  text-4xl font-semibold md:hidden'>
             We&apos;ll Be in Touch
           </div>
-          <form ref = {form} onSubmit = {sendEmail} className = ''>
+          <form ref = {form} onSubmit = {sendEmail} className = 'mt-3 mb-5'>
             <div className = 'flex gap-20 '>
               <div className = 'flex flex-col gap-10'>
                 <div>
