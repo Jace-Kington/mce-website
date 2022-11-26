@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from 'next/image'
 import image_2 from '../assets/logo-1.png'
-import HamburgerMenu from './Hamburger'
 import Link from 'next/link'
 import heroImage from '../assets/hero-image.jpg'
 
