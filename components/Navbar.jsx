@@ -4,8 +4,7 @@ import image_2 from '../assets/logo-1.png'
 import HamburgerMenu from './Hamburger'
 import Link from 'next/link'
 import heroImage from '../assets/hero-image.jpg'
-import { Dropdown } from "flowbite-react";
-
+import Hamburger from './Hamburger.jsx'
 
 const Navbar = () => {
  
@@ -13,26 +12,11 @@ const Navbar = () => {
   return (
     <div id = "home" className=''>
 
-      <div className='flex justify-between items-center md:hidden'>
-      <Image alt = "" src={image_2} className='rounded-full p-2 h-28 w-28' />
+      <nav className='flex fixed top-0 bg-white z-10 w-full rounded-b-2xl shadow-2xl justify-between items-center md:hidden'>
+      <Image alt = "" src={image_2} className='rounded-full p-2 h-32 w-32' />
+      </nav>
 
-        <Dropdown class = "bg-white" label={<div className='p-1/2'><svg className="w-8 h-8 text-gray-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></div>}>
-          <Dropdown.Item>
-            Dashboard
-          </Dropdown.Item>
-          <Dropdown.Item>
-            Settings
-          </Dropdown.Item>
-          <Dropdown.Item>
-            Earnings
-          </Dropdown.Item>
-          <Dropdown.Item>
-            Sign out
-          </Dropdown.Item>
-      </Dropdown>
-      </div>
-
-      <div className='md:flex hidden justify-between items-center ml-5 mr-5'>
+      <nav className=' md:flex fixed bg-white top-0 z-10 rounded-b-2xl  left-0 right-0 hidden md:justify-between items-center pl-5 pr-5'>
         <Image alt = "" src={image_2} className='rounded-full p-2 h-28 w-28' />
         <div className='flex gap-10 items-center'>
           <a className='hover:text-blue-400 transition ease-in' href='#services-section'>
@@ -50,9 +34,9 @@ const Navbar = () => {
           </div>
 
         </div>
-      </div>
+      </nav>
 
-      <div data-aos="fade-up-right" className='sm:flex sm:items-center  sm:justify-between'>
+      <div data-aos="fade-up-right" className='sm:flex sm:items-center mt-32  sm:justify-between'>
         <div className='text-center sm:text-left text-blue-400 mt-12 ml-0 sm:ml-12'>
           <div className='text-5xl sm:text-5xl'>
             The Best 

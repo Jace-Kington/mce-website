@@ -5,6 +5,7 @@ import MeetUs from '../components/Meet-us'
 import ContactUs from '../components/ContactUs'
 import Footer from '../components/Footer'
 import { useEffect } from 'react'
+import MobileNav from '../components/MobileNav'
 
 import AOS from "aos";
 
@@ -36,6 +37,7 @@ export default function Home() {
       <MeetUs/>
       <ContactUs/>
       <Footer/>
+      <MobileNav/>
     </div>
   )
 }
