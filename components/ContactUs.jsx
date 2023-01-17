@@ -13,7 +13,7 @@ const ContactUs = ({ num }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_16oy9kb', 'template_p83nfjr', form.current, '7jHtCbxop4BW2nz9r')
+    emailjs.sendForm('service_rsyaonc', 'template_p83nfjr', form.current, '7jHtCbxop4BW2nz9r')
       .then((result) => {
           document.getElementById("buttonSubmit").innerHTML="Sent!";
           buttonSubmit.classList.add('text-center', 'w-full', 'p-3', 'rounded-2xl', 'font-semibold', 'text-white', 'bg-green-400', 'mt-14');
